@@ -4,6 +4,7 @@ import TaskManager from './components/TaskManager'
 import UserProfile from './components/UserProfile'
 import Dashboard from './components/Dashboard'
 import PWAUpdateNotification from './components/PWAUpdateNotification'
+import PWAInstallPrompt from './components/PWAInstallPrompt'
 import './App.css'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="app">
+      <PWAInstallPrompt />
       <Header 
         user={user} 
         activeTab={activeTab} 

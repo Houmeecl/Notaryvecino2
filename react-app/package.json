@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-icons": "node generate-icons.js",
+    "build-pwa": "npm run generate-icons && npm run build",
+    "serve": "npm run build && npm run preview"
   },
   "dependencies": {
     "lucide-react": "^0.536.0",
