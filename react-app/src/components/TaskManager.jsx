@@ -62,15 +62,6 @@ const TaskManager = () => {
     setTasks(tasks.filter(task => task.id !== id))
   }
 
-  const getPriorityColor = (priority) => {
-    switch (priority) {
-      case 'high': return 'red'
-      case 'medium': return 'yellow'
-      case 'low': return 'green'
-      default: return 'gray'
-    }
-  }
-
   const completedTasks = tasks.filter(task => task.completed).length
   const totalTasks = tasks.length
 
