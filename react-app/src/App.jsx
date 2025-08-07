@@ -3,6 +3,7 @@ import Header from './components/Header'
 import TaskManager from './components/TaskManager'
 import UserProfile from './components/UserProfile'
 import Dashboard from './components/Dashboard'
+import PWAUpdateNotification from './components/PWAUpdateNotification'
 import './App.css'
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
       <main className="main-content">
         {renderActiveComponent()}
       </main>
+      <PWAUpdateNotification />
     </div>
   )
 }
